@@ -141,14 +141,142 @@ pip install -r requirements.txt
 
 ## Environment Variables
 
-Create a `.env` file and add your API key:
+## Como criar a chave da API Groq
 
-```env
-GROQ_API_KEY=your_api_key
+Siga os passos abaixo para configurar a API utilizada pelo chatbot.
+
+---
+
+### 1. Criar uma conta na Groq
+
+Acesse o site oficial:
+
+```text
+https://console.groq.com/
+```
+
+Crie sua conta ou faça login.
+
+---
+
+### 2. Acessar o painel da API
+
+Após entrar na plataforma:
+
+- Abra o menu lateral
+- Vá até:
+
+```text
+API Keys
 ```
 
 ---
 
+### 3. Gerar uma nova chave
+
+Clique em:
+
+```text
+Create API Key
+```
+
+A plataforma irá gerar uma chave parecida com:
+
+```text
+gsk_xxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+Copie essa chave.
+
+---
+
+### 4. Criar o arquivo `.env`
+
+Na raiz do projeto, crie um arquivo chamado:
+
+```text
+.env
+```
+
+A estrutura do projeto deve ficar assim:
+
+```text
+ai-knowledge-assistantai/
+│
+├── src/
+├── docs/
+├── .env
+├── README.md
+└── requirements.txt
+```
+
+---
+
+### 5. Adicionar a chave da API
+
+Dentro do arquivo `.env`, coloque:
+
+```env
+GROQ_API_KEY=sua_chave_aqui
+USER_AGENT=AIKnowledgeAssistant/1.0
+```
+
+Substitua:
+
+```text
+sua_chave_aqui
+```
+
+pela chave gerada na Groq.
+
+---
+
+### 6. Instalar as dependências
+
+Abra o terminal e execute:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 7. Executar o chatbot
+
+Inicie o projeto com:
+
+```bash
+python src/main.py
+```
+
+---
+
+### 8. Utilizar o chatbot
+
+Exemplo:
+
+```text
+Você: O que é Python?
+
+Assistant:
+Python é uma linguagem de programação de alto nível conhecida por sua simplicidade e legibilidade.
+```
+
+---
+
+### 9. Encerrar o chatbot
+
+Para fechar o programa digite:
+
+```text
+sair
+```
+
+ou
+
+```text
+exit
+```
 ## Running the Project
 
 ```bash
