@@ -1,100 +1,79 @@
-# AI Knowledge AssistantAI
+# Assistente de Conhecimento de IA
 
-Conversational AI assistant built with Python, LangChain and Groq for general question answering and contextual responses.
+Assistente de IA conversacional desenvolvido com Python, LangChain e Groq para responder perguntas gerais e fornecer respostas contextuais.
 
-> Projeto acadêmico desenvolvido para explorar conceitos de Inteligência Artificial Conversacional, Prompt Engineering e integração com Large Language Models (LLMs).
-
----
-
-## Overview
-
-AI Knowledge AssistantAI is a conversational chatbot developed using Python, LangChain and Groq.
-
-The project was created as a college study project focused on understanding how modern AI assistants work using contextual information retrieval, prompt engineering and LLM pipelines.
-
-The assistant is capable of answering general questions about different topics directly from the terminal.
+Projeto acadêmico desenvolvido para explorar conceitos de Inteligência Artificial Conversacional, Engenharia de Prompts e integração com Modelos de Linguagem de Grande Escala (LLMs).
 
 ---
 
-## Visão Geral
+# Visão Geral
 
-O AI Knowledge AssistantAI é um chatbot conversacional desenvolvido com Python, LangChain e Groq.
+O Assistente de Conhecimento de IA (AI Knowledge Assistant) é um chatbot conversacional desenvolvido com Python, LangChain e Groq.
 
-O projeto foi criado como um projeto acadêmico com foco no estudo de Inteligência Artificial Conversacional, engenharia de prompts e integração com modelos de linguagem modernos.
+O projeto foi criado com foco acadêmico para estudar como funcionam assistentes de IA modernos, utilizando recuperação de contexto, engenharia de prompts e pipelines de LLM.
 
-O assistente é capaz de responder perguntas gerais sobre diversos assuntos diretamente pelo terminal.
-
----
-
-## Features
-
-- Conversational AI assistant
-- General-purpose question answering
-- Context retrieval from web sources
-- Prompt engineering workflow
-- Integration with Groq API
-- Terminal-based interaction
-- Modular project structure
-- Educational AI project
+O sistema é capaz de responder perguntas gerais sobre diversos assuntos diretamente pelo terminal.
 
 ---
 
-## Technologies
+# Características
 
-- Python
-- LangChain
-- Groq API
-- Llama 3.3 70B
-- WebBaseLoader
-- Prompt Engineering
-- Context Injection
-- AI Pipelines
+- Assistente de IA conversacional  
+- Respostas para perguntas gerais  
+- Recuperação de contexto a partir da web  
+- Fluxo de engenharia de prompts  
+- Integração com API da Groq  
+- Interface via terminal  
+- Estrutura modular de projeto  
+- Projeto com fins educacionais  
 
 ---
 
-## Architecture
+# Tecnologias Utilizadas
+
+- Python  
+- LangChain  
+- API da Groq  
+- Llama 3.3 70B  
+- WebBaseLoader  
+- Engenharia de Prompts  
+- Injeção de Contexto  
+- Pipelines de IA  
+
+---
+
+# Arquitetura
 
 ```text
-User Question
-      ↓
-Question Processing
-      ↓
-Web Context Retrieval
-      ↓
-Prompt Engineering
-      ↓
-LLM Processing (Groq + Llama)
-      ↓
-AI Response
+Pergunta do Usuário
+        ↓
+Processamento da Pergunta
+        ↓
+Recuperação de Contexto na Web
+        ↓
+Engenharia de Prompt
+        ↓
+Processamento pelo LLM (Groq + Llama)
+        ↓
+Resposta da IA
 ```
 
 ---
 
-## How It Works
+# Como Funciona
 
-1. The user sends a question through the terminal.
-2. The chatbot processes the question.
-3. Relevant contextual information is retrieved from web sources.
-4. The retrieved content is injected into the prompt.
-5. The LLM generates a contextualized response.
-6. The final answer is displayed to the user.
-
----
-
-## Como Funciona
-
-1. O usuário envia uma pergunta pelo terminal.
-2. O chatbot processa a pergunta.
-3. Informações contextuais são buscadas na web.
-4. O conteúdo encontrado é inserido no prompt.
-5. O modelo de IA gera uma resposta contextualizada.
-6. A resposta final é exibida ao usuário.
+1. O usuário envia uma pergunta pelo terminal  
+2. O sistema processa a pergunta  
+3. Informações relevantes são buscadas na web  
+4. O conteúdo é inserido no prompt  
+5. O modelo de IA gera a resposta  
+6. A resposta é exibida no terminal  
 
 ---
 
-## Project Structure
+# Estrutura do Projeto
 
-```text
+```txt
 ai-knowledge-assistantai/
 │
 ├── src/
@@ -105,11 +84,7 @@ ai-knowledge-assistantai/
 │   └── config.py
 │
 ├── docs/
-│
-├── assets/
-│
 ├── examples/
-│
 ├── requirements.txt
 ├── README.md
 └── LICENSE
@@ -117,21 +92,21 @@ ai-knowledge-assistantai/
 
 ---
 
-## Installation
+# Instalação
 
-Clone the repository:
+### 1. Clonar o repositório
 
 ```bash
 git clone https://github.com/yourusername/ai-knowledge-assistantai.git
 ```
 
-Enter the project folder:
+### 2. Acessar a pasta
 
 ```bash
 cd ai-knowledge-assistantai
 ```
 
-Install dependencies:
+### 3. Instalar dependências
 
 ```bash
 pip install -r requirements.txt
@@ -139,17 +114,22 @@ pip install -r requirements.txt
 
 ---
 
-## Environment Variables
+# Variáveis de Ambiente
 
-## Como criar a chave da API Groq
+Crie um arquivo `.env` na raiz do projeto:
 
-Siga os passos abaixo para configurar a API utilizada pelo chatbot.
+```env
+GROQ_API_KEY=sua_chave_aqui
+USER_AGENT=AIKnowledgeAssistant/1.0
+```
 
 ---
 
-### 1. Criar uma conta na Groq
+# Como criar a chave da API da Groq
 
-Acesse o site oficial:
+### 1. Criar uma conta
+
+Acesse:
 
 ```text
 https://console.groq.com/
@@ -159,20 +139,16 @@ Crie sua conta ou faça login.
 
 ---
 
-### 2. Acessar o painel da API
+### 2. Acessar API Keys
 
-Após entrar na plataforma:
+No painel:
 
-- Abra o menu lateral
-- Vá até:
-
-```text
-API Keys
-```
+- Vá até o menu lateral  
+- Clique em **API Keys**
 
 ---
 
-### 3. Gerar uma nova chave
+### 3. Criar chave
 
 Clique em:
 
@@ -180,70 +156,21 @@ Clique em:
 Create API Key
 ```
 
-A plataforma irá gerar uma chave parecida com:
+Copie a chave gerada (exemplo):
 
 ```text
-gsk_xxxxxxxxxxxxxxxxxxxxxxxxx
-```
-
-Copie essa chave.
-
----
-
-### 4. Criar o arquivo `.env`
-
-Na raiz do projeto, crie um arquivo chamado:
-
-```text
-.env
-```
-
-A estrutura do projeto deve ficar assim:
-
-```text
-ai-knowledge-assistantai/
-│
-├── src/
-├── docs/
-├── .env
-├── README.md
-└── requirements.txt
+gsk_xxxxxxxxxxxxxxxxxxxxx
 ```
 
 ---
 
-### 5. Adicionar a chave da API
+### 4. Configurar no projeto
 
-Dentro do arquivo `.env`, coloque:
-
-```env
-GROQ_API_KEY=sua_chave_aqui
-USER_AGENT=AIKnowledgeAssistant/1.0
-```
-
-Substitua:
-
-```text
-sua_chave_aqui
-```
-
-pela chave gerada na Groq.
+Cole a chave no arquivo `.env`.
 
 ---
 
-### 6. Instalar as dependências
-
-Abra o terminal e execute:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-### 7. Executar o chatbot
-
-Inicie o projeto com:
+# Executar o projeto
 
 ```bash
 python src/main.py
@@ -251,102 +178,70 @@ python src/main.py
 
 ---
 
-### 8. Utilizar o chatbot
+# Exemplo de uso
 
-Exemplo:
-
+### Usuário:
 ```text
-Você: O que é Python?
+O que é Python?
+```
 
-Assistant:
+### Assistente:
+```text
 Python é uma linguagem de programação de alto nível conhecida por sua simplicidade e legibilidade.
 ```
 
 ---
 
-### 9. Encerrar o chatbot
+# Objetivos de Aprendizado
 
-Para fechar o programa digite:
+Este projeto foi desenvolvido para estudar:
 
-```text
-sair
-```
-
-ou
-
-```text
-exit
-```
-## Running the Project
-
-```bash
-python src/main.py
-```
+- Inteligência Artificial Conversacional  
+- Fundamentos do LangChain  
+- Engenharia de Prompts  
+- Integração com LLMs  
+- Recuperação de contexto  
+- Organização de projetos em Python  
+- Arquitetura de software  
 
 ---
 
-## Example Usage
+# Limitações Atuais
 
-```text
-You: What is Artificial Intelligence?
-
-AssistantAI:
-Artificial Intelligence (AI) refers to systems capable of performing tasks that normally require human intelligence, such as reasoning, learning and decision-making.
-```
-
----
-
-## Learning Objectives
-
-This project was developed to study:
-
-- Conversational AI
-- LangChain fundamentals
-- Prompt engineering
-- LLM integrations
-- Context retrieval workflows
-- Python project organization
-- AI application architecture
+- Interface apenas via terminal  
+- Memória conversacional limitada  
+- Dependência de conteúdo da web  
+- Limite de contexto do modelo  
+- Possíveis respostas imprecisas  
 
 ---
 
-## Current Limitations
+# Melhorias Futuras
 
-- Terminal-only interface
-- Limited conversational memory
-- Depends on external web content
-- Context size limitations
-- Possible hallucinations from AI responses
-
----
-
-## Future Improvements
-
-- Web interface
-- Conversational memory
-- Voice interaction
-- Multi-source context retrieval
-- Better prompt optimization
-- Semantic search
-- Chat history support
+- Interface web  
+- Memória conversacional  
+- Suporte a voz  
+- Múltiplas fontes de contexto  
+- Busca semântica  
+- Histórico de chat  
 
 ---
 
-## Academic Context
+# Contexto Acadêmico
 
-This project was developed as part of academic studies focused on Artificial Intelligence and Software Development.
+Este projeto foi desenvolvido com fins educacionais para estudo de Inteligência Artificial e Desenvolvimento de Software.
 
-The main objective is to understand how conversational AI systems work using modern AI frameworks and prompt engineering techniques.
-
----
-
-## License
-
-This project is licensed under the MIT License.
+O objetivo é entender como sistemas de IA funcionam na prática utilizando ferramentas modernas.
 
 ---
 
-## Author
+# Licença
 
-Luiz  
-Technology Student focused on AI and Software Development
+Este projeto está sob a licença MIT.
+
+---
+
+# Autor
+
+Luiz Antonio Xavier  
+Estudante de tecnologia com foco em desenvolvimento de software.
